@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.Conteiner {
+    /* width: 1440px;
+    height: 1024px; */
+    width: 80%;
+    height: 80%;
+    max-width: 1440px;
+    max-height: 1024px;
+}
+
+header {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    /* top: 40px;
+    left: 40px; */
+    top:5%;
+    left: 3%;
+}
+
+
+.Imput_usuario {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f3f5fc;
+    /* color: #0A3871; Color de texto */
+    position: relative;
+    border:none;
+    top: 168px;
+    left: 240px;
+    width: 577px;
+    height: 48px;
+    /* padding-bottom: 100px; */
+}
+
+.Imput_usuario::placeholder{
+    color:#0A3871;
+}
+
+.Imput_usuario:focus,
+.Imput_usuario:active {
+  border: none;
+  outline: none;
+}
+
+.Boxfather {
+    background-color: white;
+    /* width: 400px;
+    height: 944px; */
+    width: 30%;
+    height: 90%;
+    border-radius: 32px;
+    position: absolute;
+    top:2%;
+    left: 68%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* left: 1000px; */
+    /* top:40px; */
+}
+
+.img1 {
+    width: 70%;
+
+}
+
+.Cajatexto {
+    /* width: 336px; */
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    /* left: 32px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.txt1 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #0A3871;
+}
+
+.txt2 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #495057;
+}
+
+P {
+    margin: 0%;
+}
+
+.Disclaymer {
+    width: 229px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: absolute;
+    /* bottom: 851px;
+    left: 240px; */
+    /* top: 720px;
+    left: 220px; */
+    bottom: 12%;
+    left: 12%;
+}
+
+.txt3 {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    color: #495057;
+    width: 205px;
+    height: 18px;
+    opacity: 80%;
+}
+
+/* .Botones {
+    width: 680px;
+    height: 67px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    position: relative;
+    bottom: 72px;
+    left: 240px;
+}
+
+.txt4 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 328px;
+    height: 69px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt5 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #0A3871;
+    width: 328px;
+    height: 69px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0A3871;
+} */
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 60%;
+    left: 12%;
+    top: 89%;
+    gap:10px;
+  }
+  
+  .btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+  }
+  
+ /* Responsive design */
+@media screen and (max-width:768px){
+  .img1{
+    top:0;
+    display: none;
+    visibility: hidden;
+  }
+  .Conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .Imput_usuario{
+    width: 80%;
+    left:6%;
+  }
+  
+  .Disclaymer {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+
+  .Boxfather {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .Cajatexto {
+    width: 100%;
+    top: 5%;
+  }
+}
