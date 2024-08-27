@@ -1,56 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="stylesheet" href="/Styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 
 <body>
-    <div class="Conteiner"> 
+  <div class="Conteiner">
 
-        <header><img src="/Assets/Logo.png" alt="Logo"></header>
-        <textarea
-        name="texto"
-        class="Imput_usuario"
-        id="texto"
-        cols="30"
-        rows="10"
-        placeholder="Ingresa el texto aquí"
-      ></textarea>
-        <!-- <p class="Imput_usuario">Ingrese el texto aqui</p> -->
-        <div class="Boxfather">
-            <img src="/Assets/Muñeco.png" alt="img" class="img1" id="img" height="304" width="336">
-            <div class="Cajatexto">
-                <p class="txt1" id="titulo-mensaje"><b>Ningún mensaje fue encontrado</b></p>
-                <p class="txt2" id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-        </div>
-        <div class="Disclaymer">
-            <img src="/Assets/bi_exclamation-circle-fill.png" alt="Atencion" class="img2">
-            <p class="txt3">Solo letras minúsculas y sin acentos</p>
-        </div>
-        <!-- Parte nueva de botones -->
-        <div class="botones">
-        <button class="btn-encriptar" type="button" onclick="encriptar()">
-            Encriptar
-          </button>
-          <input
-            type="button"
-            class="btn-desencriptar"
-            value="Desencriptar"
-            onclick="desencriptar()"
-          />
-        </div>
-          <!-- Botones viejos -->
-        <!-- <div class="Botones">
+    <header><img src="./Assets/Logo.png" alt="Logo"></header>
+    <textarea name="texto" class="Imput_usuario" id="texto" cols="30" rows="10"
+      placeholder="Ingresa el texto aquí"></textarea>
+    <!-- <p class="Imput_usuario">Ingrese el texto aqui</p> -->
+    <div class="Boxfather">
+      <img src="./Assets/Muñeco.png" alt="img" class="img1" id="img" height="304" width="336">
+      <div class="Cajatexto">
+        <p class="txt1" id="titulo-mensaje"><b>Ningún mensaje fue encontrado</b></p>
+        <p class="txt2" id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+    </div>
+    <div class="Disclaymer">
+      <img src="./Assets/bi_exclamation-circle-fill.png" alt="Atencion" class="img2">
+      <p class="txt3">Solo letras minúsculas y sin acentos</p>
+    </div>
+    <!-- Parte nueva de botones -->
+    <div class="botones">
+      <button class="btn-encriptar" type="button" onclick="encriptar()">
+        Encriptar
+      </button>
+      <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+    </div>
+    <!-- Botones viejos -->
+    <!-- <div class="Botones">
             <p class="txt4">Encriptar</p>
             <p class="txt5">Desencriptar</p>
         </div> -->
-    </div>
-    <script src="/Javascrip.js"></script>
+  </div>
+  <script src="./Javascrip.js"></script>
 </body>
 
 </html>|
